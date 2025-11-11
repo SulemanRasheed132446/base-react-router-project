@@ -1,3 +1,5 @@
+/* NOTE: This file is already complete and does not require any changes. */
+/* It provides global styles and Tailwind configuration for the application. */
 @import "tailwindcss";
 
 @theme {

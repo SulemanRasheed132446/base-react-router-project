@@ -17,19 +17,16 @@ Implement a character search application using the Rick and Morty GraphQL API:
 Create a query to fetch a character by ID with all relevant fields.
 
 ### 2. GraphQL Client
-Implement `Client.search()` and `Client.getCharacter()` using `graphql-request`.
+Implement the client methods using `graphql-request`.
 
 ### 3. Search Hook
-Create a `useSearch()` hook that returns `{ data, loading, error, search }`.
+Create a `useSearch()` hook for managing search state and calling the client.
 
 ### 4. Search Page
 Client-side search page with a form. Display character cards linking to detail pages.
 
 ### 5. Character Detail Page
-SSR route with:
-- `loader` - Fetch character data server-side
-- `meta` - Dynamic meta tags (title, description, og:image)
-- Component - Display character details from loader data
+Server-side rendered route that displays character information with dynamic meta tags.
 
 ## Testing
 
@@ -45,6 +42,6 @@ Verify:
 ## Notes
 
 - Use generated TypeScript types
-- Search page: client-side only (no loader)
-- Character page: SSR with loader and meta function
+- Search page should be client-side only
+- Character detail page should be server-side rendered
 - Handle errors appropriately (404s, API failures)

@@ -1,3 +1,5 @@
+// NOTE: This file is already complete and does not require any changes.
+// It provides the root layout and error boundary for the application.
 import {
   isRouteErrorResponse,
   Links,
@@ -45,8 +47,6 @@ export default function App() {
   return <Outlet />;
 }
 
-// TODO (Optional): Enhance error boundary to handle API errors better
-// Consider adding specific error messages for different error types
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";

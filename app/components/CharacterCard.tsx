@@ -1,3 +1,5 @@
+// NOTE: This file is already complete and does not require any changes.
+// It serves as a reference implementation for the CharacterCard component.
 import { Link } from 'react-router';
 
 interface CharacterCardProps {
